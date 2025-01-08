@@ -1,0 +1,357 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #f5efe0; /* Light tan background */
+    color: #4b2c2c; /* Dark maroon text */
+    line-height: 1.6;
+  }
+  
+  /* Navbar Styling */
+  nav {
+    background-color: #800000; /* Maroon */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #f5efe0; /* Light tan for hover effect */
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #800000; /* Maroon header */
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Timeline Styling */
+  .timeline {
+    max-width: 900px;
+    margin: 40px auto;
+    position: relative;
+    padding: 20px 0;
+    border-left: 3px solid #800000; /* Vertical line */
+  }
+  
+  .timeline-event {
+    position: relative;
+    margin: 30px 0;
+    padding-left: 80px; /* More space between the bullet and content */
+  }
+  
+  .timeline-event::before {
+    content: '';
+    position: absolute;
+    left: 30px; /* Moves the bullet further left */
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #800000;
+    border-radius: 50%; /* Circular bullet */
+  }
+  
+  /* Event content box */
+  .event-content {
+    background-color: #ffffff; /* White background for the box */
+    border: 2px solid #800000; /* Maroon border for the box */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+  }
+  
+  /* Hover effect on event box */
+  .event-content:hover {
+    background-color: #f8d7da; /* Light red background on hover */
+  }
+  
+  .event-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-content h2 a {
+    text-decoration: none;
+    color: #800000;
+    transition: color 0.3s;
+  }
+  
+  .event-content h2 a:hover {
+    color: #4b2c2c; /* Darker maroon */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #800000; /* Maroon footer */
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  /* Event Page */
+  .event-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .event-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .event-description {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #800000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  .event-image {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #800000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .event-description h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .event-description p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .timeline-links {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .timeline-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-links ul {
+    list-style-type: none;
+  }
+  
+  .timeline-links ul li {
+    margin: 10px 0;
+  }
+  
+  .timeline-links ul li a {
+    text-decoration: none;
+    color: #800000;
+    font-size: 1.2rem;
+  }
+  
+  .timeline-links ul li a:hover {
+    color: #4b2c2c;
+    text-decoration: underline;
+  }
+  
+  /* Barometer Builder Page */
+  .barometer-builder {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .timer {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #800000;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  .barometer-setup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .barometer-container {
+    width: 60%;
+    padding: 20px;
+    border: 2px solid #800000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .barometer-part {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #800000;
+    border-radius: 10px;
+    cursor: grab;
+  }
+  
+  .drop-area {
+    width: 80%;
+    height: 300px;
+    border: 2px dashed #800000;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .drop-area h3 {
+    font-size: 1.8rem;
+  }
+  
+  #completion {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  
+  button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4b2c2c;
+  }
+  
+  .instructions {
+    margin-bottom: 30px;
+  }
+  
+  .instructions ol {
+    padding-left: 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Material Selection */
+  .material-selection {
+    background-color: #fff;
+    border: 2px solid #800000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .material-selection input {
+    margin: 10px;
+  }
+  
+  /* General button styling */
+  button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4b2c2c;
+  }
+
+  /* Video Section Styling */
+.video-section {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .video-section iframe {
+    max-width: 100%;
+    border: 2px solid #800000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Editable Instructions Styling */
+  .instructions textarea {
+    width: 100%;
+    border: 2px solid #800000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    resize: vertical; /* Allow resizing only vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .paragraph{
+    background-color: #ffffff; /* White background for the paragraph box */
+    border: 2px solid #800000; /* Maroon border */
+    padding: 20px; /* Space inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 20px 0; /* Space between paragraphs */
+    text-align: center;
+  }
+  
+  .Box {
+    margin-right: 25%;
+    margin-left: 25%;
+    justify-content: center;
+  }

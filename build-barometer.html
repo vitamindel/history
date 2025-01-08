@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Your Own Barometer</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+  <style>
+    /* Instructions Styling */
+    .instructions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px auto;
+    }
+
+    .instructions-box {
+      background-color: #ffffff; /* White background */
+      border: 3px solid #800000; /* Maroon border */
+      border-radius: 10px;
+      padding: 20px 40px; /* Inner spacing for better readability */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      transition: background-color 0.3s ease; /* Smooth hover effect */
+      text-align: center; /* Center align text inside */
+      max-width: 800px; /* Keep the box from stretching too wide */
+    }
+
+    .instructions-box:hover {
+      background-color: #f8d7da; /* Light red on hover */
+    }
+
+    .instructions-box ol {
+      padding-left: 20px;
+    }
+
+    .instructions-box li {
+      margin-bottom: 15px; /* Add spacing between instructions */
+      font-size: 1.2rem; /* Slightly larger text */
+      line-height: 1.8; /* Increase line spacing */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Back to Timeline</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <header>
+    <h1>Build Your Own Barometer!</h1>
+    <p>Follow along with the video and build your barometer. Use the interactive setup below!</p>
+  </header>
+
+  <!-- Embedded Video Section -->
+  <section class="video-section">
+    <h2>Watch the Tutorial:</h2>
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/awtjvsHyi3E" 
+      title="DIY Barometer Tutorial" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- Instructions Section -->
+  <section class="instructions">
+    <div class="instructions-box">
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Take the glass bottle and cover its opening with the balloon. Stretch the balloon tightly to ensure it is sealed.</li>
+        <li>For extra support, you could put a rubber band around the balloon, so that it keeps it secure.</li>
+        <li>Attach the straw horizontally on the center of the balloon using tape, making sure the straw extends outward.</li>
+        <li>Create a paper scale with markings (e.g., for high and low pressure) and place it behind the straw.</li>
+        <li>Observe the straw’s movement when atmospheric pressure changes. It will tilt up or down depending on pressure changes.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created by Ashwin Kirubakaran | History of Barometer</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
